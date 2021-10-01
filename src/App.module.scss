@@ -1,0 +1,86 @@
+$f: flex;
+$c: center;
+$cl: column;
+$w: 100%;
+$rgb:rgb(0,0,0);
+$pop:"Amiri",sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+.App {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(226, 122, 24, 0.6)),
+    url("./Images/ooops.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: $w;
+  height: 100vh;
+  display: $f;
+  justify-content: $c;
+  align-items: $c;
+  flex-direction: $cl;
+  font-family: $pop;
+  h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 23px;
+  }
+}
+.handle_nmaproimg {
+  width: 80%;
+  display: $f;
+  justify-content: $c;
+  align-items: $c;
+  flex-direction: $cl;
+}
+.handle_Quiz {
+  width: 500px;
+  height: 600px;
+  background: rgba(255,255,255,0.225);
+  box-shadow: inset 4.858em 2.89em 3.88em 12em rgba(0,0,0,.7);
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: $f;
+  justify-content: $c;
+  align-items: $c;
+  flex-direction: $cl;
+  h1 {
+    color: orange;
+    font-weight: bold;
+    font-size: 23px;
+  }
+  p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding:0 10px 0 10px;
+    line-height: 2;
+    font-size: 25px;
+  }
+  button{
+    font-weight: bold;
+    font-size: 23px;
+    color: white;
+    box-shadow:  0 7px 7px 0 $rgb;
+    outline: none;
+    border: none;
+    padding: 7px 15px 7px 15px;
+    background: orange;
+    border-radius: 20px;
+    transition: 400ms ease-out;
+    width: 300px;
+    &:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+}
+.thetwo_btns{
+  width: 100%;
+  display: $f;
+  justify-content: space-around;
+  align-items: $c;
+  flex-direction: $cl;
+  button{
+    margin-bottom: 20px;
+  }
+}
