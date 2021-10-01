@@ -1,10 +1,23 @@
 import React, { useState } from "react";
 import styles from "./App.module.scss";
-import { Link } from "react-router-dom";
+import BgImage from "./Images/ooops.jpg";
 function App() {
   const [added, setAdded] = useState(0);
   return (
     <div dir="rtl" className={styles.App}>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+                  body {
+                    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(226, 122, 24, 0.6)),
+                    url(${BgImage});
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  }
+          `,
+        }}
+      />
       <div className={styles.handle_nmaproimg}>
         <h1>كريم القرن الذهبي</h1>
         <div className={styles.handle_product}>
@@ -163,9 +176,7 @@ function App() {
         ) : added === 7 ? (
           <div className={styles.thetwo_btns}>
             <a href="https://land.golden-horn.store/">
-              <button>
-                أطلب علاجك من هنا
-              </button>
+              <button>أطلب علاجك من هنا</button>
             </a>
           </div>
         ) : (
